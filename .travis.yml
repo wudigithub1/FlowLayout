@@ -25,3 +25,4 @@ before_script:
 
 after_success:
   - ./gradlew coveralls
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
